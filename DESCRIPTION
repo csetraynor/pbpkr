@@ -1,0 +1,17 @@
+Package: pbpkr
+Title: Specialised in PBPK models.
+Version: 0.1.0
+Authors@R: person("Carlos", "Traynor", email = "carlos.serra91@gmail.com", role = c("aut", "cre"))
+		   person("Simon", "Carter", email = "S.Carter.1@warwick.ac.uk", role = c("aut", "cre"))
+Description: pbpkr is a package specialized in PBPK models, which aims to make easier to conduct PBPK modeling.
+Depends: R (>= 3.4.2)
+License: Commons
+Encoding: UTF-8
+LazyData: true
+Imports:
+		dplyr,
+		ggplot2
+RoxygenNote: 6.0.1
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
