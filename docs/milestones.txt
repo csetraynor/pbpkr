@@ -1,0 +1,6 @@
+- Get all data sorted:
+	- Vector of constants: includes hepatic flow, etc
+	- Vector of variables: the user interface.
+
+- Create object odes which is an array of time, Cl, concentration, i.e. differs from ode object in that it includes Cl.
+- Create methods for odes, contour plot, summary, etc.
