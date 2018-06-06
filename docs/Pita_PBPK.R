@@ -153,6 +153,10 @@ fig4 <- fig3 + #geom_line(data=Sim4,aes(x=time,y=y4),color="red",linetype=3)+   
               
 fig4
 
+
+
+CL_BiPi = seq(from = 150, to = 190, by = 1)
+
 #ggsave("Pita_PBPK_comp.png",fig4,width=7,height=3.8,units="in",dpi=600) 
 
 # fig3<-ggplot(data=Sim2)+
