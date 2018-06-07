@@ -6,6 +6,7 @@ library(grid)
 library(gridExtra)
 library(extrafont)
 library(cowplot)
+devtools::document()
 
 # Model Based on: Takeuchi et al (2014). DMD 45:726-734, with added biliary excretion into the gut and delay compartment for Tlag
 # Clinical data: Prueksaritanont et al. (2014). Br.J.Clin.Pharmacol 78(3): 587-598

@@ -1,13 +1,9 @@
-rangeCL_BiPi = seq(from = 165, to = 175, by = 1)
+rangeVmP = seq(from = 8e6, to = 11e6, by = .1e6)
 
 
 test <- odes(y = In_Cond, times = times,
-             func = PitaODE, parms = parameters_Hi,
-             var = "CL_BiPi", range_var = rangeCL_BiPi )
-
-out <- lapply(CL_BiPi, function(x) {
-  parameters_Norm["CL_BiPi"] = x
-  ode(y = In_Cond, times = times, func = PitaODE, parms = parameters_Norm)
-}
-)
+             func = PitaODE, parms = parameters_Norm,
+             var = "VmP", range_var = rangeVmP )
+p <- odes.plot(test)
+p + ggtitle("S-C Plot")
 

@@ -14,8 +14,8 @@
 #' @importFrom rlang !!
 odes <- function(y, times, func, parms, var,range_var, ...){
   ode_list <- lapply(range_var, function(i) {
-    parameters_Norm[var] = i
-    out = deSolve::ode(y = In_Cond, times = times, func = PitaODE, parms = parameters_Norm)
+    parms[var] = i
+    out = deSolve::ode(y = In_Cond, times = times, func = func, parms = parms)
     data.frame(
     x = out[,"time"],
     y = rep(i, length(out)),
