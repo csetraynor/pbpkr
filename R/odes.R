@@ -27,8 +27,10 @@ odes <- function(y, times, func, parms, var,range_var, ...){
   do.call(rbind, ode_list)
 }
 odes.plot <- function(object){
-  v <- ggplot(object, aes(x, y, z = z)) 
-  v +stat_density_2d()
+  object <- unique(object)
+  v <- ggplot(object, aes(x, y, z = z))
+  v + geom_raster(aes(fill = z))+
+    geom_contour(colour = "white")
 }
 
 
